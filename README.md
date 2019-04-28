@@ -4,7 +4,7 @@
 
 那么对于传统替换内核的方案，有没有更好的解决方案？相信大家都见到过Clover的KernelToPatch功能，它的功能就是动态给内核打补丁。能不能像KextsToPatch那样，“无伤”的修改内核？
 
-结果这两天就发现了一个神器：https://github.com/AMD-OSX/AMD_Vanilla，该Repo做到了使用动态内核补丁功能，AMD处理器（FX系列与Ryzen系列）都不再需要替换prelinkedkernel，也不需要替换kernel。
+结果这两天就发现了一个神器：[https://github.com/AMD-OSX/AMD_Vanilla](https://github.com/AMD-OSX/AMD_Vanilla)，该Repo做到了使用动态内核补丁功能，AMD处理器（FX系列与Ryzen系列）都不再需要替换prelinkedkernel，也不需要替换kernel。
 
 经过我自己的体验，能够直接安装10.14.1的原版系统，并且在APP Store中直接升级到了10.14.4。整个过程丝滑流畅，非常美妙。
 
