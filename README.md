@@ -1,5 +1,7 @@
 # 黑苹果 四叶草 for AMD Ryzen系列 与 FX系列
 
+##不需替换内核、可用FaceTime/iMessage、直接升级！
+
 前几天我写了一篇文章，借助KVM，能让Ryzen处理器不破解内核就用上iMessage和FaceTime，传送门：[AMD Ryzen黑苹果新姿势：借助KVM实现CPU变频、随意升级](https://www.itmanbu.com/ryzen-hackintosh-using-kvm-proxmox.html) 但是KVM也有一个明显的缺陷，就是无法充分压榨机器的性能。
 
 那么对于传统替换内核的方案，有没有更好的解决方案？相信大家都见到过Clover的KernelToPatch功能，它的功能就是动态给内核打补丁。能不能像KextsToPatch那样，“无伤”的修改内核？
