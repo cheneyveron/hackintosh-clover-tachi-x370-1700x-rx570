@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.chameleon.plist.JMicronATAInjector</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>JMicron ATA Injector</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>JMicronATA Driver</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.jmicron.JMicronATA</string>
+			<key>Hardware Vendor</key>
+			<string>JMicron</string>
+			<key>IOClass</key>
+			<string>JMicronATA</string>
+			<key>IOProviderClass</key>
+			<string>JMicronATAChannel</string>
+		</dict>
+		<key>JMicronATA PCI</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.jmicron.JMicronATA</string>
+			<key>Hardware Vendor</key>
+			<string>JMicron</string>
+			<key>IOClass</key>
+			<string>JMicronATAPCIRoot</string>
+			<key>IOPCIClassMatch</key>
+			<string>0x01010000&amp;0xffff0000</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x2368197b 0x2360197b&amp;0xfff0ffff</string>
+			<key>IOProbeScore</key>
+			<integer>12000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+		</dict>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Local-Root</string>
+</dict>
+</plist>
