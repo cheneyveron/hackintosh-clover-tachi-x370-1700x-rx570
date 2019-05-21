@@ -175,6 +175,54 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>Disable panic kext logging on 10.13 Release kernel</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				igKEwHRE
+				</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Replace</key>
+				<data>
+				igKEwOtE
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on 10.14 - 10.14.3 Release kernel</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				igKEwHRC
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.1,10.14.2,10.14.3</string>
+				<key>Replace</key>
+				<data>
+				igKEwOtC
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable panic kext logging on 10.14 Release kernel</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AIoChMB0
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.4,10.14.5</string>
+				<key>Replace</key>
+				<data>
+				AIoChMDr
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - commpage_populate -remove rdmsr</string>
 				<key>Disabled</key>
 				<false/>
@@ -231,7 +279,7 @@
 				6Jn1//8=
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4</string>
+				<string>10.14.4,10.14.5</string>
 				<key>Replace</key>
 				<data>
 				Dx9EAAA=
@@ -360,6 +408,26 @@
 				<data>
 				uB0AAIAx2zHJMdIPokGJxkGJ0YM9p+2XAAB0G0iNPRSh
 				ZwC+HQAAgDHAQYnIRInyidnoUv1fAEGD/gQPgvUBAABF
+				MfbrBg8fAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				McAx2zHJMdIPokGJxoM9JWKYAAB0G0GJ0UiNPRy0ZwAx
+				9jHAQYnIRInyidnoiBBgAEGD/gQPgvgBAABFMfbrDGYP
+				H4QAAAAAAA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.5</string>
+				<key>Replace</key>
+				<data>
+				uB0AAIAx2zHJMdIPokGJxkGJ0YM9H2KYAAB0G0iNPRm0
+				ZwC+HQAAgDHAQYnIRInyidnoghBgAEGD/gQPgvUBAABF
 				MfbrBg8fAA==
 				</data>
 			</dict>
@@ -579,6 +647,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				MduAPchomAAGdVw=
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.5</string>
+				<key>Replace</key>
+				<data>
+				u58h/DfpXQAAAJA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
 				<key>Disabled</key>
 				<false/>
@@ -718,6 +802,28 @@
 				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
 				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
 				BXTylwBEiTVx8pcAgz0u85cAAHUNiQUm85cARIk1I/OX
+				AA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PexeO1d0Gz28T+p4dSaLBddnmACJBZlomACLDc9nmADr
+				OLk1AAAADzIPt8jB6BCD4A/rILk1AAAADzJIweIgicFI
+				CdG6AQABAA9F0A+3yonQwegQiQVZaJgAiQ1XaJgAhcB0
+				Gg==
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.5</string>
+				<key>Replace</key>
+				<data>
+				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
+				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
+				BaRnmABEiTWhZ5gAgz1eaJgAAHUNiQVWaJgARIk1U2iY
 				AA==
 				</data>
 			</dict>
@@ -877,6 +983,26 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>algrey - tsc_init - replace skylake with zen</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SInISQ+vx0Ux7THSSff0SInGSIkFm9CQAEi62zS214Le
+				G0NIichI9+JIiTWs0JAASMHqEmnCQEIPACnBSI09onVm
+				ADHAidaJykyJ+U2J4OjQd14ASIsdgdCQAA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.5</string>
+				<key>Replace</key>
+				<data>
+				uWQAAcAPMg+2yInGwe4Ig+Y/MdJIichI9/ZIicZIaf4A
+				wusLSAH2SIk9htCQADHSSIn4SPf2SInDSIkdnNCQAEiJ
+				NYXQkABmDx+EAAAAAABmDx+EAAAAAABmkA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - tsc_init - replace skylake with zen part 2</string>
 				<key>Disabled</key>
 				<false/>
@@ -886,6 +1012,22 @@
 				</data>
 				<key>MatchOS</key>
 				<string>10.14.4</string>
+				<key>Replace</key>
+				<data>
+				SInY6UACAABmDx9EAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - tsc_init - replace skylake with zen part 2</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				RIu72AEAAESLo9wBAAA=
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.5</string>
 				<key>Replace</key>
 				<data>
 				SInY6UACAABmDx9EAAA=
@@ -905,6 +1047,22 @@
 				<key>Replace</key>
 				<data>
 				TIkllGWQAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - tsc_init - use TSC calculated from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIkFLM+QAA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.5</string>
+				<key>Replace</key>
+				<data>
+				TIklXc+QAA==
 				</data>
 			</dict>
 			<dict>
@@ -1027,6 +1185,22 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>algrey - lapic_interrupt - skip checks and prevent panic</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				gz0VwXsAAHQK
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.5</string>
+				<key>Replace</key>
+				<data>
+				60gPH4AAAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>algrey - mtrr_update_action - fix PAT</string>
 				<key>Disabled</key>
 				<false/>
@@ -1051,7 +1225,7 @@
 				icCB4v//AP+BygAAAQC5dwIAAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4</string>
+				<string>10.14.4,10.14.5</string>
 				<key>Replace</key>
 				<data>
 				uXcCAAC4BgEHALoGAQcADx9AAA==
